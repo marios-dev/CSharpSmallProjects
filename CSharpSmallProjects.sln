@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpSmallProjects", "CSharpSmallProjects\CSharpSmallProjects.csproj", "{B7B8A93B-66F6-4272-9BFD-0C039517F43C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RockPaperScissors", "RockPaperScissors", "{FC33E665-E01F-4402-8312-E0E76DD8259C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7B8A93B-66F6-4272-9BFD-0C039517F43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B8A93B-66F6-4272-9BFD-0C039517F43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B8A93B-66F6-4272-9BFD-0C039517F43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B8A93B-66F6-4272-9BFD-0C039517F43C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7B8A93B-66F6-4272-9BFD-0C039517F43C} = {FC33E665-E01F-4402-8312-E0E76DD8259C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A5CB195-CCC5-4F45-BEA4-8FAC7ECF773A}
+	EndGlobalSection
+EndGlobal
