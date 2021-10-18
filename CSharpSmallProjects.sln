@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissors", "CSharp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RockPaperScissors", "RockPaperScissors", "{FC33E665-E01F-4402-8312-E0E76DD8259C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DisplayCallerLog", "DisplayCallerLog", "{CB340D06-E15A-41DB-9E78-8CD2C229CEAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallLogManagement", "CallLogManagement\CallLogManagement.csproj", "{07192B73-03F5-4906-BF3F-486868277AD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{B7B8A93B-66F6-4272-9BFD-0C039517F43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7B8A93B-66F6-4272-9BFD-0C039517F43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7B8A93B-66F6-4272-9BFD-0C039517F43C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07192B73-03F5-4906-BF3F-486868277AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07192B73-03F5-4906-BF3F-486868277AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07192B73-03F5-4906-BF3F-486868277AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07192B73-03F5-4906-BF3F-486868277AD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B7B8A93B-66F6-4272-9BFD-0C039517F43C} = {FC33E665-E01F-4402-8312-E0E76DD8259C}
+		{07192B73-03F5-4906-BF3F-486868277AD4} = {CB340D06-E15A-41DB-9E78-8CD2C229CEAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A5CB195-CCC5-4F45-BEA4-8FAC7ECF773A}
