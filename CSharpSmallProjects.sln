@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DisplayCallerLog", "Display
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallLogManagement", "CallLogManagement\CallLogManagement.csproj", "{07192B73-03F5-4906-BF3F-486868277AD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeGame", "SnakeGame\SnakeGame.csproj", "{F03E7344-21F3-4A96-992E-FD742534E49A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{07192B73-03F5-4906-BF3F-486868277AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07192B73-03F5-4906-BF3F-486868277AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07192B73-03F5-4906-BF3F-486868277AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F03E7344-21F3-4A96-992E-FD742534E49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03E7344-21F3-4A96-992E-FD742534E49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03E7344-21F3-4A96-992E-FD742534E49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03E7344-21F3-4A96-992E-FD742534E49A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
