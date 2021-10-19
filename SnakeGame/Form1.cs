@@ -58,10 +58,10 @@ namespace SnakeGame
             food.Y = random.Next(0, maxYPos);
         }
 
-        private void UpdateScreen(object sender,EventArgs e)
+        private void UpdateScreen(object sender, EventArgs e)
         {
             //Check for Game Over
-            if (Settings.GameOver==true)
+            if (Settings.GameOver == true)
             {
                 //Check if enter is pressed
                 if (Input.KeyPressed(Keys.Enter))
@@ -102,7 +102,7 @@ namespace SnakeGame
                 //Draw snake
                 for (int i = 0; i < Snake.Count; i++)
                 {
-                    if (i==0)
+                    if (i == 0)
                     {
                         snakeColour = Brushes.Black; //draw head
                     }
@@ -112,18 +112,14 @@ namespace SnakeGame
                     }
                     //draw snake
                     canvas.FillEllipse(snakeColour,
-                        new Rectangle(Snake[i].X)*Settings.Width,
-                                      Snake[i].Y*Settings.Height,
-                                      Settings.Width,Settings.Height));
-                //draw food
-                canvas.FillEllipse(Brushes.Red,
-                    new Rectangle(food.X*Settings.Width,
-                                  food.Y*Settings.Height,Settings.Width,Settings.Height));
+                        new Rectangle(Snake[i].X * Settings.Width,
+                                      Snake[i].Y * Settings.Height,
+                                      Settings.Width, Settings.Height));
+                    //draw food
+                    canvas.FillEllipse(Brushes.Red,
+                        new Rectangle(food.X * Settings.Width,
+                                      food.Y * Settings.Height, Settings.Width, Settings.Height));
                 }
-            }
-            else
-            {
-
             }
         }
     }
