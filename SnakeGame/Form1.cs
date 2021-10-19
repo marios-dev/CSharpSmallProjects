@@ -24,7 +24,7 @@ namespace SnakeGame
 
             //Set game speed and start timer
             gameTimer.Interval = 1000 / Settings.Speed;
-            gameTimer.Tick += UpdateScreen();
+            //gameTimer.Tick += UpdateScreen();
             gameTimer.Start();
 
             // StartNew game
@@ -54,8 +54,77 @@ namespace SnakeGame
 
             Random random = new Random();
             food = new Circle();
-            food.X = random.Next(0,maxXPos);
-            food.Y=random.Next(0, )
+            food.X = random.Next(0, maxXPos);
+            food.Y = random.Next(0, maxYPos);
+        }
+
+        private void UpdateScreen(object sender,EventArgs e)
+        {
+            //Check for Game Over
+            if (Settings.GameOver==true)
+            {
+                //Check if enter is pressed
+                if (Input.KeyPressed(Keys.Enter))
+                {
+                    StartGame();
+                }
+            }
+            else
+            {
+                if (Input.KeyPressed(Keys.Right) && Settings.direction != Direction.Left)
+                {
+                    Settings.direction = Direction.Right;
+                }
+                else if (Input.KeyPressed(Keys.Left) && Settings.direction != Direction.Right)
+                {
+                    Settings.direction = Direction.Left;
+                }
+                else if (Input.KeyPressed(Keys.Up) && Settings.direction != Direction.Down)
+                {
+                    Settings.direction = Direction.Up;
+                }
+                else if (Input.KeyPressed(Keys.Down) && Settings.direction != Direction.Up)
+                {
+                    Settings.direction = Direction.Down;
+                }
+                //MovePlayer();
+            }
+            pbCanvas.Invalidate();
+        }
+
+        private void pbCanvas_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics canvas = e.Graphics;
+            if (Settings.GameOver != false)
+            {
+                //Set color of snake
+                Brush snakeColour;
+                //Draw snake
+                for (int i = 0; i < Snake.Count; i++)
+                {
+                    if (i==0)
+                    {
+                        snakeColour = Brushes.Black; //draw head
+                    }
+                    else
+                    {
+                        snakeColour = Brushes.Green; //rest of body
+                    }
+                    //draw snake
+                    canvas.FillEllipse(snakeColour,
+                        new Rectangle(Snake[i].X)*Settings.Width,
+                                      Snake[i].Y*Settings.Height,
+                                      Settings.Width,Settings.Height));
+                //draw food
+                canvas.FillEllipse(Brushes.Red,
+                    new Rectangle(food.X*Settings.Width,
+                                  food.Y*Settings.Height,Settings.Width,Settings.Height));
+                }
+            }
+            else
+            {
+
+            }
         }
     }
 }
