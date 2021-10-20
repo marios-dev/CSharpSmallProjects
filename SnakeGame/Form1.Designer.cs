@@ -34,6 +34,7 @@ namespace SnakeGame
             this.lblScore = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.lblGameOver = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,16 +67,30 @@ namespace SnakeGame
             this.label2.Size = new System.Drawing.Size(0, 37);
             this.label2.TabIndex = 2;
             // 
+            // lblGameOver
+            // 
+            this.lblGameOver.AutoSize = true;
+            this.lblGameOver.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGameOver.Location = new System.Drawing.Point(34, 37);
+            this.lblGameOver.Name = "lblGameOver";
+            this.lblGameOver.Size = new System.Drawing.Size(86, 31);
+            this.lblGameOver.TabIndex = 3;
+            this.lblGameOver.Text = "label1";
+            this.lblGameOver.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 323);
+            this.Controls.Add(this.lblGameOver);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.pbCanvas);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -88,6 +103,7 @@ namespace SnakeGame
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Label lblGameOver;
     }
 }
 
