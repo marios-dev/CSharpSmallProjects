@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallLogManagement", "CallLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeGame", "SnakeGame\SnakeGame.csproj", "{F03E7344-21F3-4A96-992E-FD742534E49A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snake", "Snake", "{25C3063F-0811-40AA-99ED-B9F25171CC52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B7B8A93B-66F6-4272-9BFD-0C039517F43C} = {FC33E665-E01F-4402-8312-E0E76DD8259C}
 		{07192B73-03F5-4906-BF3F-486868277AD4} = {CB340D06-E15A-41DB-9E78-8CD2C229CEAB}
+		{F03E7344-21F3-4A96-992E-FD742534E49A} = {25C3063F-0811-40AA-99ED-B9F25171CC52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A5CB195-CCC5-4F45-BEA4-8FAC7ECF773A}
