@@ -60,7 +60,6 @@ namespace SnakeGame
             food = new Circle { X = random.Next(0, maxXPos), Y = random.Next(0, maxYPos) };
         }
 
-
         private void UpdateScreen(object sender, EventArgs e)
         {
             //Check for Game Over
@@ -89,7 +88,6 @@ namespace SnakeGame
             pbCanvas.Invalidate();
 
         }
-
         private void pbCanvas_Paint(object sender, PaintEventArgs e)
         {
             Graphics canvas = e.Graphics;
@@ -129,7 +127,6 @@ namespace SnakeGame
             }
         }
 
-
         private void MovePlayer()
         {
             for (int i = Snake.Count - 1; i >= 0; i--)
@@ -153,7 +150,6 @@ namespace SnakeGame
                             break;
                     }
 
-
                     //Get maximum X and Y Pos
                     int maxXPos = pbCanvas.Size.Width / Settings.Width;
                     int maxYPos = pbCanvas.Size.Height / Settings.Height;
@@ -164,7 +160,6 @@ namespace SnakeGame
                     {
                         Die();
                     }
-
 
                     //Detect collission with body
                     for (int j = 1; j < Snake.Count; j++)
@@ -218,7 +213,6 @@ namespace SnakeGame
 
             GenerateFood();
         }
-
         private void Die()
         {
             Settings.GameOver = true;
